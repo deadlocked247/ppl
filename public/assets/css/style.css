@@ -1,0 +1,306 @@
+
+@font-face {
+    font-family: 'Gotham Rounded';
+    src:url('/fonts/GothamRnd-MedItal.otf');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gotham Rounded';
+    src:url('/fonts/GothamRnd-LightItal.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gotham Rounded';
+    src:url('/fonts/GothamRnd-BoldItal.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gotham Rounded';
+    src:url('/fonts/GothamRnd-Bold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Rounded';
+    src:url('/fonts/GothamRnd-Medium.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Rounded';
+    src:url('/fonts/GothamRnd-Book.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Rounded';
+    src:url('/fonts/GothamRnd-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src:url('/fonts/Gotham-Black.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src:url('/fonts/Gotham-Bold.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src:url('/fonts/Gotham-Book.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src:url('/fonts/Gotham-BookItalic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Gotham';
+    src:url('/fonts/Gotham-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src:url('/fonts/Gotham-XLight.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+* {
+	font-family: 'Gotham Rounded', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	margin: 0px;
+	background:#363845;
+}
+.menu {
+	width:100%;
+	background:#363845;
+	height:60px;
+}
+
+.menu-btn {
+	background-image: url('../img/menu.svg');
+	height:25px;
+	width:25px;
+	display: inline-block;
+	margin:20px;
+}
+
+@media (max-width: 960px) {
+	.menu-container, .body-container, .start-container {
+		width:100%;
+	}
+	.workout-block>li {
+		width:49%;
+		display: inline-flex;
+		height:auto;
+	}
+	.sticky {
+	    position: fixed;
+	    bottom: 0px;
+	    z-index: 100;
+	    width:100%;
+	}
+}
+@media (min-width: 960px) {
+	.menu-container, .body-container, .start-container {
+		width:960px;
+		display: block;
+		margin:auto;
+	}
+	.workout-block>li {
+		width:32%;
+		height:auto;
+		display: inline-flex;
+	}
+	.sticky {
+	    position: fixed;
+	    left: 50%;
+	    bottom: 0px;
+	    transform: translate(-50%, 0%);
+	    z-index: 100;
+	}
+}
+
+.workout-block-set {
+    background: #5e637e;
+    border-radius: 50%;
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    z-index: 1;
+    padding: 3px 0px;
+    position: relative;
+
+}
+
+
+
+.start-flag {
+	display: inline-block;
+	width:30px;
+	height: 30px;
+}
+
+.start-container {
+	background-color: #54c7bb;
+	color:white;
+	text-align: center;
+	font-size: 1.25em;
+}
+
+
+.workout-block-progress {
+    background-color: #2a2c38;
+    border-radius: 50px;
+    width: calc(100% - 80px);
+    display: inline-block;
+    margin-left: -25px;
+    position: relative;
+    padding-top:2.5px;
+    padding-bottom:2.5px;
+    padding-left: 30px;
+}
+
+.workout-block-reps {
+	display: inline-block;
+    width: 40px;
+    text-align: center;
+}
+
+.body {
+	background:#363845;
+	width:100%;
+	margin-bottom:70px;
+}
+
+.welcome-container {
+	color:white;
+	width:300px;
+	display: block;
+	margin:auto;
+	text-align: center;
+	font-size: 1.5em;
+	padding:20px;
+}
+
+.workout-container {
+	margin-bottom:5px;
+	background-color: #464752;
+	width:auto;
+	padding:20px;
+	color:white;
+}
+
+.workout-block-routine {
+	padding:10px 0px;
+}
+
+.workout-header-date {
+	color:#d4d4d7;
+	font-size: 1em;
+}
+
+.workout-block-name {
+	font-size: 1.25em;
+	padding-bottom:5px;
+}
+
+.workout-header-name {
+	padding-top:5px;
+	font-size: 1.25em;
+	text-transform: uppercase;
+}
+
+.workout-block {
+	width:auto;
+	background-color: #464752;
+	color:white;
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	margin-bottom:5px;
+}
+
+
+
+.workout-block-container {
+	padding:20px;
+	width:100%;
+}
+
+.tcon-loader--spinner360 {
+  border-radius: 80%;
+  display: block;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  -webkit-animation: tcon-spin360 0.675s linear infinite forwards;
+  animation: tcon-spin360 0.675s linear infinite forwards;
+  background: lightgray; }
+  .tcon-loader--spinner360:before,
+  .tcon-loader--spinner360:after {
+    content: "";
+    display: block;
+    position: absolute; }
+  .tcon-loader--spinner360:before {
+    border-radius: 0 90px 90px 0;
+    height: 40px;
+    width: 50%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background: black;
+    background-image: linear-gradient(lightgray, black); }
+  .tcon-loader--spinner360:after {
+    border-radius: 80%;
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: white; }
+
+@-webkit-keyframes tcon-spin360 {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes tcon-spin360 {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.tcon-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+  .tcon-visuallyhidden:active,
+  .tcon-visuallyhidden:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto; }
