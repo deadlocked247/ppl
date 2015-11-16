@@ -1,5 +1,5 @@
 ssh app@45.55.1.41 <<EOF
-  cd ~/ppl
+  cd ~/ppl-frontend
   git pull
   npm install
   forever restartall
