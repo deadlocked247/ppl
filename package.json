@@ -1,0 +1,22 @@
+{
+  "name": "ppl",
+  "version": "1.0.0",
+  "description": "PPL frontend ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadlocked247/ppl.git"
+  },
+  "keywords": [
+    "PPL"
+  ],
+  "author": "Burak Aslan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deadlocked247/ppl/issues"
+  },
+  "homepage": "https://github.com/deadlocked247/ppl#readme"
+}
