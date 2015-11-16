@@ -1,0 +1,373 @@
+<!doctype html>
+
+<ul ng-show="menu" class="side-menu animated slideInLeft">
+	<img class="logo" src="assets/img/logo.svg"></img>
+	<li class="active">
+		WORKOUT
+	</li>
+	<li>
+		ROUTINES
+	</li>
+	<li>
+		STATS
+	</li>
+	<li>
+		VIDEOS
+	</li>
+</ul>
+<div ng-show="menu" ng-click="menu=false;" class="overlay animated fadeIn">
+</div>
+
+<header ng-class="{'nav-up':menu}" class="menu nav-down">
+	<div class="menu-container">
+		<div class="menu-btn" ng-click="menu=!menu">
+		</div>
+	</div>
+</header>
+<div style="padding-top:60px" class="body">
+	<div class="body-container">
+		<div class="welcome-container">
+			<div class="welcome-user">
+			</div>
+			Hello John! Ready to start your workout? {{$rootScope.user}}
+		</div>
+		<div class="workout-container">
+			<div class="workout-header">
+				<div class="workout-header-date">
+					Today: Wed, Nov 12
+				</div>
+				<div class="workout-header-name">
+					Push A
+				</div>
+			</div>
+		</div>
+		<ul class="workout-block">
+			<li>
+				<div class="workout-block-container">
+					<div class="workout-block-name">
+						Bench Press
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							1
+						</div>
+						<div class="workout-block-progress">
+							160 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							2
+						</div>
+						<div class="workout-block-progress">
+							160 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							3
+						</div>
+						<div class="workout-block-progress">
+							160 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							4
+						</div>
+						<div class="workout-block-progress">
+							160 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="workout-block-container">
+					<div class="workout-block-name">
+						Bench Press
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							1
+						</div>
+						<div class="workout-block-progress">
+							160 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							2
+						</div>
+						<div class="workout-block-progress">
+							180 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							3
+						</div>
+						<div class="workout-block-progress">
+							200 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="workout-block-container">
+					<div class="workout-block-name">
+						Bench Press
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							1
+						</div>
+						<div class="workout-block-progress">
+							160 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							2
+						</div>
+						<div class="workout-block-progress">
+							100 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							3
+						</div>
+						<div class="workout-block-progress">
+							140 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="workout-container">
+			<div class="workout-header">
+				<div class="workout-header-date">
+					Today: Wed, Nov 12
+				</div>
+				<div class="workout-header-name">
+					Push A
+				</div>
+			</div>
+		</div>
+		<ul class="workout-block">
+			<li>
+				<div class="workout-block-container">
+					<div class="workout-block-name">
+						Bench Press
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							1
+						</div>
+						<div class="workout-block-progress">
+							160 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							2
+						</div>
+						<div class="workout-block-progress">
+							160 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							3
+						</div>
+						<div class="workout-block-progress">
+							160 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							4
+						</div>
+						<div class="workout-block-progress">
+							160 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="workout-block-container">
+					<div class="workout-block-name">
+						Bench Press
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							1
+						</div>
+						<div class="workout-block-progress">
+							160 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							2
+						</div>
+						<div class="workout-block-progress">
+							180 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							3
+						</div>
+						<div class="workout-block-progress">
+							200 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="workout-block-container">
+					<div class="workout-block-name">
+						Bench Press
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							1
+						</div>
+						<div class="workout-block-progress">
+							160 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							2
+						</div>
+						<div class="workout-block-progress">
+							100 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+					<div class="workout-block-routine">
+						<div class="workout-block-set">
+							3
+						</div>
+						<div class="workout-block-progress">
+							140 LBS
+						</div>
+						<div class="workout-block-reps">
+							10
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="sticky" ng-class="{'down':menu}">
+	<div class="start-container">
+		<div style="width:auto;padding:15px;">
+			<img class="start-flag" src="assets/img/flag.svg">
+			<div style="position:relative;top:-5px;margin-left:5px;display:inline-block">
+				START WORKOUT
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
