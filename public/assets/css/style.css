@@ -98,7 +98,7 @@ body {
 }
 
 .welcome-user {
-	background-image: url('../img/john.jpg');
+	background-image: url('../img/default.png');
 	border-radius: 50%;
 	display: block;
 	background-size: contain;
@@ -437,7 +437,7 @@ body {
   position: relative;
   -webkit-animation: tcon-spin360 0.675s linear infinite forwards;
   animation: tcon-spin360 0.675s linear infinite forwards;
-  background: lightgray; }
+  background: #363845; }
   .tcon-loader--spinner360:before,
   .tcon-loader--spinner360:after {
     content: "";
@@ -450,8 +450,8 @@ body {
     top: 0;
     right: 0;
     z-index: 1;
-    background: black;
-    background-image: linear-gradient(lightgray, black); }
+    background: #363845;
+    background-image: linear-gradient(#363845, #54c7bb); }
   .tcon-loader--spinner360:after {
     border-radius: 80%;
     height: 30px;
@@ -461,7 +461,7 @@ body {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 1;
-    background: white; }
+    background: #363845; }
 
 @-webkit-keyframes tcon-spin360 {
   to {

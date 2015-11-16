@@ -20,3 +20,10 @@
 	<div ng-show="$root.menu" ng-click="$root.menu=false;" class="overlay animated fadeIn">
 	</div>
 </div>
+
+<header ng-class="{'nav-up':$root.menu}" class="menu nav-down">
+	<div class="menu-container">
+		<div class="menu-btn" ng-click="$root.menu=!$root.menu">
+		</div>
+	</div>
+</header>
