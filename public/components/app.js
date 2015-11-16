@@ -37,12 +37,20 @@
 			.then(function (payload) {
 				$rootScope.user = angular.copy(payload.data);
 				console.log($rootScope.user);
-				$location.absUrl = '/';
+				$location.path('/');
 			});
 		}
 	})
-	.controller('workoutController', function($scope, $rootScope) {
-		$scope.menu = false;
+	.controller('menuController', function($scope, $cookies, $rootScope) {
+		$rootScope.menu = false;
+
+		$scope.logout = function() {
+		}
+	})
+	.controller('workoutController', function($scope, $rootScope, $cookies, $location) {
+		if(!$cookies.get('connect.sid')) {
+			$location.path('/login');
+		}
 
 	});
 	

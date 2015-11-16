@@ -1,0 +1,22 @@
+<div ng-controller="menuController">
+	<ul ng-show="$root.menu" class="side-menu animated slideInLeft">
+		<img class="logo" src="assets/img/logo.svg"></img>
+		<li class="active">
+			WORKOUT
+		</li>
+		<li>
+			ROUTINES
+		</li>
+		<li>
+			STATS
+		</li>
+		<li>
+			VIDEOS
+		</li>
+		<li ng-click="logout()">
+			LOGOUT
+		</li>
+	</ul>
+	<div ng-show="$root.menu" ng-click="$root.menu=false;" class="overlay animated fadeIn">
+	</div>
+</div>

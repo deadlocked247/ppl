@@ -1,26 +1,7 @@
-<!doctype html>
 
-<ul ng-show="menu" class="side-menu animated slideInLeft">
-	<img class="logo" src="assets/img/logo.svg"></img>
-	<li class="active">
-		WORKOUT
-	</li>
-	<li>
-		ROUTINES
-	</li>
-	<li>
-		STATS
-	</li>
-	<li>
-		VIDEOS
-	</li>
-</ul>
-<div ng-show="menu" ng-click="menu=false;" class="overlay animated fadeIn">
-</div>
-
-<header ng-class="{'nav-up':menu}" class="menu nav-down">
+<header ng-class="{'nav-up':$root.menu}" class="menu nav-down">
 	<div class="menu-container">
-		<div class="menu-btn" ng-click="menu=!menu">
+		<div class="menu-btn" ng-click="$root.menu=!$root.menu">
 		</div>
 	</div>
 </header>
@@ -320,7 +301,7 @@
 	</div>
 </div>
 
-<div class="sticky" ng-class="{'down':menu}">
+<div class="sticky" ng-class="{'down':$root.menu}">
 	<div class="start-container">
 		<div style="width:auto;padding:15px;">
 			<img class="start-flag" src="assets/img/flag.svg">
