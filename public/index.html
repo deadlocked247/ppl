@@ -2,18 +2,23 @@
 <head>
 	<title>PPL</title>
 	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
+	<script src="components/app.js"></script>
 </head>
-<body>
-	<div class="menu">
+<body ng-app="ppl">
+	<div ng-cloak ng-controller="appController" class="menu">
 		<div class="menu-container">
-			<div class="menu-btn">
+			<div class="menu-btn" ng-click="menu=!menu">
 			</div>
 		</div>
 	</div>
 	<div class="body">
 		<div class="body-container">
 			<div class="welcome-container">
-				Hello John! Ready to start your workout?
+				<div class="welcome-user">
+				</div>
+				Hello John! Ready to start your workout? {{menu}}
 			</div>
 			<div class="workout-container">
 				<div class="workout-header">
@@ -315,8 +320,6 @@
 		</div>
 	</div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 <!--
 	<span class="tcon-loader--spinner360" aria-label="loading">
