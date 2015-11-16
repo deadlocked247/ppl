@@ -1,0 +1,7 @@
+ssh app@45.55.1.41 <<EOF
+  cd ~/ppl-frontend
+  git pull
+  npm install
+  forever restartall
+  exit
+EOF
