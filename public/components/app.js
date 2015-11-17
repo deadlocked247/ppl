@@ -47,7 +47,7 @@
 
 			loginFB : function(body) {
 				return $http({
-					url:'/api/login/facebook',
+					url:'/api/facebook/login',
 					method: "GET"
 				});
 			},
@@ -67,7 +67,7 @@
 			}
 		};
 	})
-	.controller('loginController', function($scope, dataService, $cookies, $location, $rootScope) {
+	.controller('loginController', function($scope, dataService, $cookies, $location, $rootScope, $sce) {
 		$rootScope.loggedIn = false;
 		if($cookies.get('connect.sid')) {
 			$rootScope.loggedIn = true;
@@ -88,13 +88,10 @@
 			});
 		}
 		$scope.submitFB = function() {
-			
+
 			dataService.loginFB()
 			.then(function (payload) {
-				$rootScope.user = angular.copy(payload.data);
-				$rootScope.loggedIn = true;
-				window.localStorage.setItem("userID", payload.data._id);
-				$location.path('/');
+				console.log(payload.data);
 			});
 		}
 	})
