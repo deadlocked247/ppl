@@ -1,0 +1,23 @@
+<div class="body-container">
+
+	<ul ng-init="stock = true; my = false;" class="top-menu">
+		<li ng-class="{'active': stock }" ng-click="my = false; stock = true;">
+			STOCK ROUTINES
+		</li>
+		<li ng-class="{'active': my }" ng-click="stock = false; my = true;">
+			MY ROUTINES
+		</li>
+	</ul>
+
+	<span style="margin-top:30px;" ng-show="loading" class="tcon-loader--spinner360" aria-label="loading">
+	  <span class="tcon-visuallyhidden">loading</span>
+	</span>
+
+	<div ng-hide="loading || my" ng-repeat="routine in routines" class="routine">
+
+		<div class="routine-name">
+			{{routine.name}}
+		</div>
+		<div class='routine-overlay'></div>
+	</div>
+</div>

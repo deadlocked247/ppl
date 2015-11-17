@@ -117,6 +117,10 @@ body {
 	margin:17.5px 20px;
 }
 
+.body-container {
+	padding-top:60px;
+}
+
 @media (max-width: 960px) {
 	.menu-container, .body-container, .start-container {
 		width:100%;
@@ -404,6 +408,35 @@ body {
 	margin:15px 30px;
 }
 
+.top-menu {
+	list-style: none;
+	padding:0px;
+	margin:0px;
+	width:100%;
+}
+
+.top-menu>li {
+	color:#d4d4d7;
+	display: inline-block;
+    width: 49%;
+    text-align: center;
+    padding:20px 0px;
+}
+
+.routine-name {
+	position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 70px;
+    font-size: 3em;
+    font-weight: 500;
+}
+.top-menu>li.active {
+	color:white;
+	border-bottom:4px solid #54c7bb;
+}
+
 .logo-login {
 	display: block;
 	margin:auto;
@@ -418,6 +451,20 @@ body {
 	color:white;
 }
 
+.routine {
+	width:100%;
+	background-image: url('../img/stock1.jpg');
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.routine-overlay {
+	height:100%;
+	width:100%;
+    background: rgba(54, 56, 69, 0.5);
+}
 
 .login-bg {
 	background-image: url('../img/bg.jpeg');
@@ -432,6 +479,7 @@ body {
 .tcon-loader--spinner360 {
   border-radius: 80%;
   display: block;
+  margin:auto;
   height: 40px;
   width: 40px;
   position: relative;
