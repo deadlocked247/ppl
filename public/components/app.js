@@ -113,6 +113,15 @@
 		$scope.setRoutine = function(routine) {
 			$scope.selectedRoutine = routine;
 		}
+
+		$scope.selectMuscleMenu = function() {
+			for(var x in $scope.selectedRoutine.workouts) {
+				for(var y in $scope.selectedRoutine.workouts[x].movements) {
+					$scope.selectedRoutine.workouts[x].movements[y].showMuscle = false;
+				}
+			}
+
+		}
 	})
 	.controller('workoutController', function ($scope, $rootScope, $cookies, $location, dataService) {
 		
