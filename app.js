@@ -49,6 +49,7 @@ app.post('/api/login', function(req, res) {
 
 app.get('/auth/facebook/callback', function(req, res) {
 	res.body = req.body;
+	console.log(req.body);
 	rq({
 		url: 'http://45.55.1.41:8080/auth/facebook/callback',
 		form: req.body
