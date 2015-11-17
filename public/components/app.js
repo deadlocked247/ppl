@@ -10,7 +10,7 @@
 		    templateUrl: '../workout.html',
 		    controller: 'workoutController'
 		})
-		.when('/auth/facebook/callback') {
+		.when('/auth/facebook/callback', {
 			templateUrl: '../workout.html',
 		    controller: 'workoutController'
 		})
