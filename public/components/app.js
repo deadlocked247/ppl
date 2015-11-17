@@ -45,6 +45,13 @@
 				});
 			},
 
+			loginFB : function(body) {
+				return $http({
+					url:'/api/login/facebook',
+					method: "GET"
+				});
+			},
+
 			routines : function() {
 				return $http({
 					url:'/api/routines',
@@ -67,13 +74,22 @@
 			$location.path('/');
 		}
 		$scope.submit = function() {
-			console.log("ASD");
 			var body = 
 			{
 				email: $scope.user,
 				password: $scope.pass
 			}
 			dataService.login(body)
+			.then(function (payload) {
+				$rootScope.user = angular.copy(payload.data);
+				$rootScope.loggedIn = true;
+				window.localStorage.setItem("userID", payload.data._id);
+				$location.path('/');
+			});
+		}
+		$scope.submitFB = function() {
+			
+			dataService.loginFB()
 			.then(function (payload) {
 				$rootScope.user = angular.copy(payload.data);
 				$rootScope.loggedIn = true;
