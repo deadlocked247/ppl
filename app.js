@@ -54,6 +54,7 @@ app.get('/auth/facebook/callback', function(req, res) {
 		form: req.body
 	},
 	function(error, response, body) {
+		console.log(body);
 		res.set(response.headers);
 		var cookie = response.headers['set-cookie'][0].split(";");
 		cookie = cookie[0].replace('connect.sid=', '');
