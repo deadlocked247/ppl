@@ -49,7 +49,7 @@ app.post('/api/login', function(req, res) {
 
 app.get('/auth/facebook/callback', function(req, res) {
 	res.body = req.body;
-	res.send('/public/index.html');
+	res.sendFile('/public/index.html');
 })
 
 
