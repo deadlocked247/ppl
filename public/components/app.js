@@ -109,6 +109,10 @@
 			$scope.loading = false;
 			$scope.routines = payload.data;
 		})
+
+		$scope.setRoutine = function(routine) {
+			$scope.selectedRoutine = routine;
+		}
 	})
 	.controller('workoutController', function ($scope, $rootScope, $cookies, $location, dataService) {
 		

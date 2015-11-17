@@ -9,15 +9,38 @@
 		</li>
 	</ul>
 
+
+
 	<span style="margin-top:30px;" ng-show="loading" class="tcon-loader--spinner360" aria-label="loading">
 	  <span class="tcon-visuallyhidden">loading</span>
 	</span>
 
-	<div ng-hide="loading || my" ng-repeat="routine in routines" class="routine">
+	<div ng-click="setRoutine(routine)" ng-hide="loading || my" ng-repeat="routine in routines" class="routine">
 
 		<div class="routine-name">
 			{{routine.name}}
 		</div>
 		<div class='routine-overlay'></div>
+	</div>
+	<div ng-show="selectedRoutine" ng-repeat="workout in selectedRoutine.workouts" class="workout-container">
+		<div class="workout-header">
+				<div class="workout-header-name">
+					{{workout.name}}
+				</div>
+			</div>
+		</div>
+		<ul class="workout-block">
+			<li ng-repeat="movement in workout.movements">
+				<div class="workout-block-container">
+					<div class="workout-block-name">
+						{{movement.name}}
+					</div>
+					<div ng-repeat="x in new Array(movement.sets)" class="workout-block-routine">
+
+					</div>
+
+				</div>
+			</li>
+		</ul>
 	</div>
 </div>
