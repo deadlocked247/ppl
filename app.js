@@ -49,7 +49,17 @@ app.post('/api/login', function(req, res) {
 
 app.get('/auth/facebook/callback', function(req, res) {
 	res.body = req.body;
-	res.sendFile(__dirname + '/public/index.html');
+	rq({
+		url: 'http://45.55.1.41:8080/auth/facebook/callback' + req.query,
+		form: req.body
+	},
+	function(error, response, body) {
+		res.set(response.headers);
+		var cookie = response.headers['set-cookie'][0].split(";");
+		cookie = cookie[0].replace('connect.sid=', '');
+		res.cookie('connect.sid',  cookie, { maxAge: 900000, httpOnly: false});
+		res.sendFile(__dirname + '/public/index.html');
+	});
 })
 
 
