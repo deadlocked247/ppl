@@ -71,6 +71,30 @@ app.get('/api/login/facebook', function(req, res) {
 })
 
 
+app.get('/auth/facebook/callback', function(req, res) {
+	rq({
+		url: 'http://45.55.1.41:8080/auth/facebook/callback',
+		method: 'GET',
+		header: {
+			'Content-type': 'application/json'
+			}
+		},
+		function(error, response, body) {
+			res.set(response.headers);
+			var cookie = response.headers['set-cookie'][0].split(";");
+			cookie = cookie[0].replace('connect.sid=', '');
+			res.cookie('connect.sid',  cookie, { maxAge: 900000, httpOnly: false});
+			console.log(body);
+			if(error) {
+				res.send(new Error(error));
+			}
+			else {
+				res.send(body);
+			}
+		});
+	
+})
+
 app.get('/api/user/:id', function(req, res) {
 	console.log(req.headers);
 	rq({
